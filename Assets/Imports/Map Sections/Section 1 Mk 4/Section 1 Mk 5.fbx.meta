@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 2e9c1e9431107ba479e9a394cdcb1fe6
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Barbed Wire 1
+    second: {fileID: 2100000, guid: e670dede3be1cf54f839e210a23a77c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base Frame
+    second: {fileID: 2100000, guid: 5221938913c1ddc449da95ab4399e3c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boulder 1
+    second: {fileID: 2100000, guid: aa4d0428dbe17bf4097ba4b9944e79b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boulder 2
+    second: {fileID: 2100000, guid: 062a5a9c5636fd149b68910484b31420, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CS 1
+    second: {fileID: 2100000, guid: c9047b1bc23c83b4f83e6e5b962bfeab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CS 2
+    second: {fileID: 2100000, guid: a968c4850f8e19a478d1d0e6ca6c0867, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CS 3
+    second: {fileID: 2100000, guid: 83c7a9d826c2afd41a3174723a88c155, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CS 4
+    second: {fileID: 2100000, guid: e554eaa759560654bb2a44eecf6cddb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CS 5
+    second: {fileID: 2100000, guid: 4f2304c6d2d7f424bb84eb3c50db2eae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cannon Base
+    second: {fileID: 2100000, guid: cf6c577af074bad4f87aa4b0222c3921, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cannon Main and Joint
+    second: {fileID: 2100000, guid: 5ccc7f84f7c2c3f4f872491852de3be1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cannon Rings
+    second: {fileID: 2100000, guid: 1d27338611cca4441b26e59c338f721c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cliff 1
+    second: {fileID: 2100000, guid: 1c7f8666bcf6b8b4db518a1b796eb3c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door Hatches
+    second: {fileID: 2100000, guid: 6d4a720f9e4638e419c7439a418dd68f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door Panels
+    second: {fileID: 2100000, guid: 2af51437027849d4cb95a49cad90a52c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Exhaust and Axels
+    second: {fileID: 2100000, guid: 1a5ff223fbf24364ba10b0814c6e5a8f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fall 1
+    second: {fileID: 2100000, guid: 2c60939247bf83145890b4c015d71d8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fall 2
+    second: {fileID: 2100000, guid: ec4a26eb99a517044bcedbeaee85833a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fence 1 Main
+    second: {fileID: 2100000, guid: d92c60711e921004d8c339b682efb932, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fence 1 Rim
+    second: {fileID: 2100000, guid: 74760cd107c43864bba7b46a914648ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garage Clamps
+    second: {fileID: 2100000, guid: 18fa493236393c04580ceaded65984ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garage Door
+    second: {fileID: 2100000, guid: 246d21f0f1ef0bd4fb306ab7a384b092, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garage Door Main
+    second: {fileID: 2100000, guid: 8552535f5cdf87e47ac7b3cda918b1af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garage Pillar and Hinges
+    second: {fileID: 2100000, guid: 4ef1e1abc37bdbe47bb9e932c1b2a094, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garage Sat 1
+    second: {fileID: 2100000, guid: 87064e59bf0c01c4689aa5ca399feb7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garage Side panel
+    second: {fileID: 2100000, guid: 3a5e498a31a4097498aa5c7c49d21d59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garage Tower 1
+    second: {fileID: 2100000, guid: b2b2450b07eaf5b4fa6e6fdf0d43fed2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garage Tower 2
+    second: {fileID: 2100000, guid: 6589e818bbaa59a439259d5a190890c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garage Tower 4
+    second: {fileID: 2100000, guid: 59f492b8cd00ad7448fb32df4d7adb12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garage Tower 5
+    second: {fileID: 2100000, guid: ebae92ebcd8402f4aabad9803b074141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garage Window
+    second: {fileID: 2100000, guid: fff9919694b28b542b277b03327c54b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garage main
+    second: {fileID: 2100000, guid: b22b39bffde43a6458e4e58289084fcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grill
+    second: {fileID: 2100000, guid: 80964bac4a3dc6c4ca93424c9a52b783, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Landscape 1
+    second: {fileID: 2100000, guid: 1d774470c910de64799201efd3c00072, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Landscape 2
+    second: {fileID: 2100000, guid: ee4794a065b390543979335a2e91741b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Landscape 3
+    second: {fileID: 2100000, guid: 585df5381f1bca441b06fa5795b2b0bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Landscape 4
+    second: {fileID: 2100000, guid: 1cb6f2235d7953a4aa4ba2850714fdc1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Landscape 5
+    second: {fileID: 2100000, guid: 8819e54fe97ffd84882ff9a2dc5b1053, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Posts
+    second: {fileID: 2100000, guid: b17ee8f2e8287b24497ffa9f47c09ec2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pump panel
+    second: {fileID: 2100000, guid: 847de1a83322ed449b4f7abd17e6533f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pump pipe
+    second: {fileID: 2100000, guid: 1b16d5d6b6420cd438be57dec9e2408c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rear Axel Cover
+    second: {fileID: 2100000, guid: 308c8ea169c7dbe4f99aa542d947aadd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rims
+    second: {fileID: 2100000, guid: b94bf4c5a54a4934fae8ad5f3e6df3ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Salt Flat Tile
+    second: {fileID: 2100000, guid: 59b0719af58be6f4aa6df5530f05e265, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tail Lights
+    second: {fileID: 2100000, guid: 1adf283be04f1cd46861f007f3677bc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tires
+    second: {fileID: 2100000, guid: d533c5df1daaf2641ae7f93f33240aae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trip 1
+    second: {fileID: 2100000, guid: d15b3b19b8e9ba54bb9d564b34498eba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trip 2
+    second: {fileID: 2100000, guid: 0e12337e3fb63a64f9fea81cd1f0efa7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wheel wells
+    second: {fileID: 2100000, guid: bed625b4e029cb7419916b690924ee76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Windows
+    second: {fileID: 2100000, guid: b1e9e74a58c513341a1cb58c0ca84c9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: board main
+    second: {fileID: 2100000, guid: 9399e6f7e10f5a84fa04864207167d37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: board rim
+    second: {fileID: 2100000, guid: 9a846f3ac6c2428408a93f6a9a738243, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bolts
+    second: {fileID: 2100000, guid: 1d99fd43fb35d2148b7cd4ec64c9d0b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: broken car axel
+    second: {fileID: 2100000, guid: 40652d756c6e6ae4284ac774c49f9b01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: broken car door
+    second: {fileID: 2100000, guid: 6205d7c0890c4fd45a68ec8a84c4085a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: broken car main
+    second: {fileID: 2100000, guid: d274529beda1f314b92668c5950fedc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: broken car main 2
+    second: {fileID: 2100000, guid: 5aca900ce29a95147abba4a9f38746cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: broken car main 3
+    second: {fileID: 2100000, guid: cbf36a2c06e81d5438aa49b3a35d399c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: broken car rims
+    second: {fileID: 2100000, guid: e99ab880dc875e0479ab1de834a3eff6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: broken car tires
+    second: {fileID: 2100000, guid: 0c3ae4c0fb4b2cf4abde4be7d04a5052, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: broken window
+    second: {fileID: 2100000, guid: 0083f5ccc0e12ad47b582037bf206462, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: neon main
+    second: {fileID: 2100000, guid: ee35814d9eafb3e4b87abcd200c0a917, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: neon rim
+    second: {fileID: 2100000, guid: ac8717f355cd1ff42bea8289c89c7d09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pump base
+    second: {fileID: 2100000, guid: c9c34fdc905a8414387568f73454eb80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: small sight face
+    second: {fileID: 2100000, guid: 08b82d839a8801b438696e0020b7cec0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: small sign rim
+    second: {fileID: 2100000, guid: b205c6c3da4abc444906f69747b1a125, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stand beams
+    second: {fileID: 2100000, guid: e7c9e387c97ad6c46b636750853b6a39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stand main
+    second: {fileID: 2100000, guid: 75579a66630522e4b910db4616e0a8c1, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 3
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
