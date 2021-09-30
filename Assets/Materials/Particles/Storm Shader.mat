@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Storm Shader
+  m_Shader: {fileID: -6465566751694194690, guid: 195035c43818b944b89bce5fc77f35c0, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_18a9639f0c6841b3874c83a7412f5555: -0.05
+    - Vector1_20d24868b6db4a3b8c79cccf8aafd8f0: 2.57
+    - Vector1_2216fcdad31d4774b067bf353c44a752: 13.4
+    - Vector1_393072dacc484100996339e6eb2d0611: 98.06
+    - Vector1_3fa358080b3741caac22d7b271072ba2: 255
+    - Vector1_4b59c7969aa047aa93fce3a0b5905a67: 50
+    - Vector1_571c3c6c788f453da38a552175107fe1: 2.42
+    - Vector1_845c64fd22bd4be7863e2eeb77542f12: -1.57
+    - Vector1_b1fcfb0dbf23425e91377713c51c83ea: 16.07
+    - Vector1_c0bc72bae3fb4f96bf78aaa34cf6174a: 6.76
+    - Vector1_c5eb7857a62c4095ab6ff76ce6f8b4c2: -10.78
+    - Vector1_cdc2ea1fc08e4f7cbcd89ed5ec8d3e28: 18
+    - Vector1_eb2089dde52f4da6a0fad170845c71d5: 60.46
+    - Vector1_f79e93c71f214ba49874bb9a809694c7: 3.02
+    m_Colors:
+    - Color_3d6212896f4345319ca315ecec6e1f43: {r: 0.46226418, g: 0.3373815, b: 0.16789782, a: 1}
+    - Color_92e8696928c54c5687a750f295af96ae: {r: 0.9433962, g: 0.7640619, b: 0.52954787, a: 0}
+    - Vector4_39a8ce5528664c4ebce5915894779c15: {r: 0, g: 1, b: -1, a: -1}
+    - Vector4_fec4795a69f44ff2bd2170c5b1c0c531: {r: 1, g: 0, b: 0, a: 90}
+  m_BuildTextureStacks: []

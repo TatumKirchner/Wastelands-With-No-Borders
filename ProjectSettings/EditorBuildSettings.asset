@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 919987aa82bc5ad4598fb71d6430f40c
+  - enabled: 1
+    path: Assets/Scenes/Wastelands With No Borders.unity
+    guid: c3d78183195fdd8458072d165316de97
+  m_configObjects: {}
