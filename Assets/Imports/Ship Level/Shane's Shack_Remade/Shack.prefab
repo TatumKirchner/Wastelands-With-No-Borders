@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -5754084199372789682}
   - component: {fileID: -7511558181221131132}
   - component: {fileID: -4612666358451686098}
+  - component: {fileID: 6470253384887098680}
   m_Layer: 0
   m_Name: Shack
   m_TagString: Untagged
@@ -96,3 +97,22 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5407545367518631643, guid: 2c18fd55a7bf8814bb6fdaf091235560, type: 3}
+--- !u!205 &6470253384887098680
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4073969039804729703}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.829164, y: -0.55568886, z: 0.2621355}
+  m_Size: 14.513087
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.02586173
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: -7511558181221131132}
+  m_Enabled: 1

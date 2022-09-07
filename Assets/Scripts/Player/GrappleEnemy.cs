@@ -57,8 +57,11 @@ public class GrappleEnemy : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit, maxGrappleDistance, grappleSpot) && !m_hooked && !rope.hooked)
         {
             //Get info from the raycast hit
-            sJoint = hit.collider.gameObject.GetComponent<SpringJoint>();
-            sJoint.connectedBody = GetComponent<Rigidbody>();
+            if (sJoint == null)
+                sJoint = hit.collider.gameObject.GetComponent<SpringJoint>();
+            if (sJoint != null && sJoint.connectedBody != null)
+                sJoint.connectedBody = GetComponent<Rigidbody>();
+
             sJoint.connectedAnchor = gunTip.position;
 
             //Set up the line render position count

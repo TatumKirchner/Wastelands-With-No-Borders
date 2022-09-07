@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 6956334824337690410}
   - component: {fileID: 6279713601714176143}
   - component: {fileID: 8125322167698863173}
-  - component: {fileID: 7892711047081953771}
+  - component: {fileID: 2965048281165113723}
+  - component: {fileID: 736225944033354816}
   m_Layer: 0
-  m_Name: Plant 2 (1)
+  m_Name: Plant 2 Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7892711047081953771
-MeshCollider:
+--- !u!136 &2965048281165113723
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -93,7 +94,26 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1856150034111365774, guid: 92218aab06c92a44991144ebfa397ae5, type: 3}
+  m_Radius: 1.07
+  m_Height: 4.009085
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.6369255, z: -0.029999971}
+--- !u!205 &736225944033354816
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7764783027059922320}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 2.2562528, z: 0.9698365}
+  m_Size: 5.24774
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.005144177
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 8125322167698863173}
+  m_Enabled: 1

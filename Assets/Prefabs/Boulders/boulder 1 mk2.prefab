@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6735768836540198419}
   - component: {fileID: 8835698910070512345}
   - component: {fileID: 8715555088321623910}
+  - component: {fileID: 1392784000489778498}
   m_Layer: 0
   m_Name: boulder 1 mk2
   m_TagString: Untagged
@@ -93,6 +94,25 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1663283755759795353, guid: 50303c99bfd4e164eafb4800b5e81022, type: 3}
+--- !u!205 &1392784000489778498
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7034140105952508684}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.0035779327, y: 0.013022795, z: 0.0121988505}
+  m_Size: 0.3008617
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.019994013
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 8835698910070512345}
+  m_Enabled: 1

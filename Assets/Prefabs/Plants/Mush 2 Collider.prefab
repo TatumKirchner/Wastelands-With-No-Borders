@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 6733747078693244074}
   - component: {fileID: 7700250326470411023}
   - component: {fileID: 5564267253711124421}
-  - component: {fileID: 8358706973208698423}
+  - component: {fileID: 4395034127205737779}
+  - component: {fileID: 721724683812075364}
   m_Layer: 0
-  m_Name: Mush 2 (1)
+  m_Name: Mush 2 Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,8 +85,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8358706973208698423
-MeshCollider:
+--- !u!205 &4395034127205737779
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6212931078876141072}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.000061035156, y: 1.808223, z: 0.000030517578}
+  m_Size: 6.9819784
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.007147099
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5564267253711124421}
+  m_Enabled: 1
+--- !u!136 &721724683812075364
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,7 +114,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8980115498675584859, guid: f849898e5a9605f4283aaf0a3fb3bffd, type: 3}
+  m_Radius: 1.71
+  m_Height: 4.0658975
+  m_Direction: 1
+  m_Center: {x: 0.000030517578, y: 1.8082229, z: 0.000015258789}

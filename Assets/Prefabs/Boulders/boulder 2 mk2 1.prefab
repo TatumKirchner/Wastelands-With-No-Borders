@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 158032313889611165}
   - component: {fileID: 2726233328876038487}
   - component: {fileID: 7152751379009425727}
+  - component: {fileID: 2052714487036131457}
   m_Layer: 0
   m_Name: boulder 2 mk2 1
   m_TagString: Untagged
@@ -98,6 +99,27 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6511144331317960518, guid: d98af071322cc8042b8b01ba433797ca, type: 3}
+--- !u!205 &2052714487036131457
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527659916064917634}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.09767077, y: -0.08967568, z: -0.05944851}
+  m_Size: 0.5368011
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.0697737
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 2726233328876038487}
+    - renderer: {fileID: 3707144765648852579}
+    - renderer: {fileID: 4259980094481199434}
+  m_Enabled: 1
 --- !u!1001 &4719992359134587795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -180,6 +202,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7698227934318879158, guid: e13fe5d46d7781542886ddcc5701f89e, type: 3}
   m_PrefabInstance: {fileID: 4719992359134587795}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &4259980094481199434 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8835698910070512345, guid: e13fe5d46d7781542886ddcc5701f89e, type: 3}
+  m_PrefabInstance: {fileID: 4719992359134587795}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5326872005612260538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -260,5 +287,10 @@ PrefabInstance:
 --- !u!4 &2538130617261698316 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7698227934318879158, guid: e13fe5d46d7781542886ddcc5701f89e, type: 3}
+  m_PrefabInstance: {fileID: 5326872005612260538}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &3707144765648852579 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8835698910070512345, guid: e13fe5d46d7781542886ddcc5701f89e, type: 3}
   m_PrefabInstance: {fileID: 5326872005612260538}
   m_PrefabAsset: {fileID: 0}

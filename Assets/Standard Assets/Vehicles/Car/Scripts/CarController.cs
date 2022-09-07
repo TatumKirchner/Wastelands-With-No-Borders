@@ -18,7 +18,7 @@ internal enum SpeedType
 public class CarController : MonoBehaviour
 {
     [SerializeField] private CarDriveType m_CarDriveType = CarDriveType.FourWheelDrive;
-    [SerializeField] public WheelCollider[] m_WheelColliders = new WheelCollider[4];
+    public WheelCollider[] m_WheelColliders = new WheelCollider[4];
     [SerializeField] private GameObject[] m_WheelMeshes = new GameObject[4];
     [SerializeField] private WheelEffects[] m_WheelEffects = new WheelEffects[4];
     [SerializeField] private Vector3 m_CenterOfMassOffset;
@@ -31,23 +31,24 @@ public class CarController : MonoBehaviour
     [SerializeField] private float m_Downforce = 100f;
     [SerializeField] private SpeedType m_SpeedType;
     [SerializeField] private float m_Topspeed = 200;
-    [SerializeField] private static int NoOfGears = 5;
+    private static int NoOfGears = 5;
     [SerializeField] private float m_RevRangeBoundary = 1f;
     [SerializeField] private float m_SlipLimit;
     [SerializeField] private float m_BrakeTorque;
     [SerializeField] private float antiRollVal = 500;
 
     private Quaternion[] m_WheelMeshLocalRotations;
-    private Vector3 m_Prevpos, m_Pos;
+    //private Vector3 m_Prevpos, m_Pos;
     private float m_SteerAngle;
     private int m_GearNum;
     private float m_GearFactor;
     private float m_OldRotation;
     private float m_CurrentTorque;
+    private float _currentMaxSteerAngle;
     [HideInInspector]
     public Rigidbody m_Rigidbody;
 
-    private const float k_ReversingThreshold = 0.01f;
+    //private const float k_ReversingThreshold = 0.01f;
 
     public bool Skidding { get; private set; }
     public float BrakeInput { get; private set; }
@@ -134,11 +135,8 @@ public class CarController : MonoBehaviour
     {
         for (int i = 0; i < 4; i++)
         {
-            Quaternion quat;
-            Vector3 position;
-            m_WheelColliders[i].GetWorldPose(out position, out quat);
-            m_WheelMeshes[i].transform.position = position;
-            m_WheelMeshes[i].transform.rotation = quat;
+            m_WheelColliders[i].GetWorldPose(out Vector3 position, out Quaternion quat);
+            m_WheelMeshes[i].transform.SetPositionAndRotation(position, quat);
         }
 
         //clamp input values
@@ -178,7 +176,7 @@ public class CarController : MonoBehaviour
         AddDownForce();
         CheckForWheelSpin();
         TractionControl();
-        //AntiRoll();
+        AntiRoll();
 
         _currentSpeed = Mathf.RoundToInt(m_Rigidbody.velocity.magnitude * 3.6f);
     }
@@ -250,8 +248,7 @@ public class CarController : MonoBehaviour
     {
         for (int i = 0; i < 4; i++)
         {
-            WheelHit wheelhit;
-            m_WheelColliders[i].GetGroundHit(out wheelhit);
+            m_WheelColliders[i].GetGroundHit(out WheelHit wheelhit);
             if (wheelhit.normal == Vector3.zero)
                 return; // wheels arent on the ground so dont realign the rigidbody velocity
         }
@@ -270,34 +267,48 @@ public class CarController : MonoBehaviour
     {
         float travelL = 1.0f;
         float travelR = 1.0f;
+        bool groundedLf = m_WheelColliders[0].GetGroundHit(out WheelHit wheelHit);
 
-        bool groundedL = m_WheelColliders[1].GetGroundHit(out WheelHit hit);
-        if (groundedL)
-        {
-            travelL = (-m_WheelColliders[1].transform.InverseTransformPoint(hit.point).y - m_WheelColliders[1].radius) / m_WheelColliders[1].suspensionDistance;
-        }
+        if (groundedLf)
+            travelL = (-m_WheelColliders[0].transform.InverseTransformPoint(wheelHit.point).y - m_WheelColliders[0].radius) / m_WheelColliders[0].suspensionDistance;
 
-        bool groundedR = m_WheelColliders[0].GetGroundHit(out hit);
-        if (groundedR)
-        {
-            travelR = (-m_WheelColliders[0].transform.InverseTransformPoint(hit.point).y - m_WheelColliders[0].radius) / m_WheelColliders[0].suspensionDistance;
-        }
+        bool groundedRf = m_WheelColliders[1].GetGroundHit(out wheelHit);
+
+        if (groundedRf)
+            travelR = (-m_WheelColliders[1].transform.InverseTransformPoint(wheelHit.point).y - m_WheelColliders[1].radius) / m_WheelColliders[1].suspensionDistance;
 
         float antiRollForce = (travelL - travelR) * antiRollVal;
 
-        if (groundedL)
-            m_Rigidbody.AddForceAtPosition(m_WheelColliders[1].transform.up * -antiRollForce, m_WheelColliders[1].transform.position);
+        if (groundedLf)
+            m_Rigidbody.AddForceAtPosition(m_WheelColliders[0].transform.up * -antiRollForce, m_WheelColliders[0].transform.position);
 
-        if (groundedR)
-            m_Rigidbody.AddForceAtPosition(m_WheelColliders[0].transform.up * antiRollForce, m_WheelColliders[0].transform.position);
+        if (groundedRf)
+            m_Rigidbody.AddForceAtPosition(m_WheelColliders[1].transform.up * antiRollForce, m_WheelColliders[1].transform.position);
+
+        bool groundedLr = m_WheelColliders[2].GetGroundHit(out wheelHit);
+
+        if (groundedLr)
+            travelL = (-m_WheelColliders[2].transform.InverseTransformPoint(wheelHit.point).y - m_WheelColliders[2].radius) / m_WheelColliders[2].suspensionDistance;
+
+        bool groundedRr = m_WheelColliders[3].GetGroundHit(out wheelHit);
+
+        if (groundedRr)
+            travelR = (-m_WheelColliders[3].transform.InverseTransformPoint(wheelHit.point).y - m_WheelColliders[3].radius) / m_WheelColliders[3].suspensionDistance;
+
+        antiRollForce = (travelL - travelR) * antiRollVal;
+
+        if (groundedLr)
+            m_Rigidbody.AddForceAtPosition(m_WheelColliders[2].transform.up * -antiRollForce, m_WheelColliders[2].transform.position);
+
+        if (groundedRr)
+            m_Rigidbody.AddForceAtPosition(m_WheelColliders[3].transform.up * antiRollForce, m_WheelColliders[3].transform.position);
     }
 
 
     // this is used to add more grip in relation to speed
     private void AddDownForce()
     {
-        m_WheelColliders[0].attachedRigidbody.AddForce(-transform.up * m_Downforce *
-                                                     m_WheelColliders[0].attachedRigidbody.velocity.magnitude);
+        m_WheelColliders[0].attachedRigidbody.AddForce(m_Downforce * m_WheelColliders[0].attachedRigidbody.velocity.magnitude * -transform.up);
     }
 
 
@@ -311,8 +322,7 @@ public class CarController : MonoBehaviour
         // loop through all wheels
         for (int i = 0; i < 4; i++)
         {
-            WheelHit wheelHit;
-            m_WheelColliders[i].GetGroundHit(out wheelHit);
+            m_WheelColliders[i].GetGroundHit(out WheelHit wheelHit);
 
             // is the tire slipping above the given threshhold
             if (Mathf.Abs(wheelHit.forwardSlip) >= m_SlipLimit || Mathf.Abs(wheelHit.sidewaysSlip) >= m_SlipLimit)
@@ -390,7 +400,6 @@ public class CarController : MonoBehaviour
         }
     }
 
-
     private bool AnySkidSoundPlaying()
     {
         for (int i = 0; i < 4; i++)
@@ -401,5 +410,21 @@ public class CarController : MonoBehaviour
             }
         }
         return false;
+    }
+
+    private void SetSteerAngle()
+    {
+        if (CurrentSpeed < 25f)
+        {
+            _currentMaxSteerAngle = Mathf.MoveTowards(_currentMaxSteerAngle, m_MaximumSteerAngle, 0.5f);
+        }
+        else if (CurrentSpeed > 25f && CurrentSpeed < 60f)
+        {
+            _currentMaxSteerAngle = Mathf.MoveTowards(_currentMaxSteerAngle, m_MaximumSteerAngle / 1.5f, 0.5f);
+        }
+        else if (CurrentSpeed > 60)
+        {
+            _currentMaxSteerAngle = Mathf.MoveTowards(_currentMaxSteerAngle, m_MaximumSteerAngle / 2f, 0.5f);
+        }
     }
 }

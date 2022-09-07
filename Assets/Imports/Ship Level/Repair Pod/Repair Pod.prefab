@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 394460643274006256}
   - component: {fileID: 8358750805212545919}
   - component: {fileID: 5817956909156324226}
+  - component: {fileID: 6858271138378980574}
   m_Layer: 10
   m_Name: Repair Pod
   m_TagString: Untagged
@@ -140,3 +141,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   repairAmount: 100
+--- !u!205 &6858271138378980574
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5244257750369347417}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.0000005364418, y: -0.6755817, z: 0.0000013709068}
+  m_Size: 4.616124
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.014256064
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: -7511558181221131132}
+  m_Enabled: 1

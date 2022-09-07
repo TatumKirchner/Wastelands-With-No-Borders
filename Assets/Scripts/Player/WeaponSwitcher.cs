@@ -29,6 +29,15 @@ public class WeaponSwitcher : MonoBehaviour
     //When the player rolls the mouse wheel or presses an alpha key switch weapons.
     void SwitchWeapons()
     {
+        if (activeWeapon > 2) //must match the number of cases
+        {
+            activeWeapon = 0; //leave this number - allows the rotation to start over
+        }
+        if (activeWeapon < 0) //leave this number - allows the rotation to start over
+        {
+            activeWeapon = 2; //must match the number of cases
+        }
+
         switch (activeWeapon)
         {
             case 0:
@@ -46,15 +55,6 @@ public class WeaponSwitcher : MonoBehaviour
                 weaponTwo = false;
                 weaponThree = true;
                 break;
-        }
-
-        if (activeWeapon > 2) //must match the number of cases
-        {
-            activeWeapon = 0; //leave this number - allows the rotation to start over
-        }
-        if (activeWeapon < 0) //leave this number - allows the rotation to start over
-        {
-            activeWeapon = 2; //must match the number of cases
         }
     }
 

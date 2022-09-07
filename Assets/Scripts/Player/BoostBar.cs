@@ -16,10 +16,12 @@ public class BoostBar : MonoBehaviour
     public float currentBoost;
 
     private bool boosting = false;
+    private Rigidbody _playerRb;
 
     private void Awake()
     {
         slider = GetComponent<Slider>();
+        _playerRb = player.GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -27,6 +29,14 @@ public class BoostBar : MonoBehaviour
         SetEnergy(GetBoostNormalized());
         ApplyBoost();
         BoostRegen();
+    }
+
+    private void FixedUpdate()
+    {
+        if (boosting)
+        {
+            _playerRb.AddForce(m_boostAmount * Time.deltaTime * player.transform.forward, ForceMode.Impulse);
+        }
     }
 
     public void SetMaxBoost(int energy)
@@ -43,16 +53,7 @@ public class BoostBar : MonoBehaviour
 
     public void ApplyBoost()
     {
-        //Apply boost
-        if (Input.GetKey(KeyCode.LeftShift) && currentBoost >= 5f && WeaponSwitcher.weaponOne)
-        {
-            boosting = true;
-            player.GetComponent<Rigidbody>().AddForce(m_boostAmount * Time.deltaTime * player.transform.forward, ForceMode.Impulse);
-        }
-        else
-        {
-            boosting = false;
-        }
+        boosting = Input.GetKey(KeyCode.LeftShift) && currentBoost >= 5f && WeaponSwitcher.weaponOne;
     }
 
     void BoostRegen()

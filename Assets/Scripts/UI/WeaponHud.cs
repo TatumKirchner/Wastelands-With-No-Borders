@@ -7,6 +7,11 @@ public class WeaponHud : MonoBehaviour
     [SerializeField] private GameObject ketShield;
     [SerializeField] private WeaponSwitcher WeaponSwitcher;
 
+    private void Start()
+    {
+        UpdateWeaponHud();
+    }
+
     public void UpdateWeaponHud()
     {
         switch (WeaponSwitcher.activeWeapon)

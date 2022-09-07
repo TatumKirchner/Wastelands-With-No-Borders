@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9054765407424030883}
   - component: {fileID: 6506586969480485993}
   - component: {fileID: 5440890727796476752}
+  - component: {fileID: 5069936496362724224}
   m_Layer: 0
   m_Name: Mush 1 Collider
   m_TagString: Untagged
@@ -99,3 +100,22 @@ CapsuleCollider:
   m_Height: 4.0516047
   m_Direction: 1
   m_Center: {x: -2.722574e-32, y: 1.8153399, z: 0.31537998}
+--- !u!205 &5069936496362724224
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4705406260059471292}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.000030517578, y: 1.8153412, z: 0.3153646}
+  m_Size: 6.9819922
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.013105089
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6506586969480485993}
+  m_Enabled: 1

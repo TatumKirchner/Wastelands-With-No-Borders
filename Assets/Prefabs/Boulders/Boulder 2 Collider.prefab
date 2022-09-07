@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 4589321087084748387}
   - component: {fileID: 1753163041097493161}
   - component: {fileID: 9182756815215227246}
+  - component: {fileID: 5827864134371198004}
   m_Layer: 0
-  m_Name: boulder 2 mk2 2
+  m_Name: Boulder 2 Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,6 +94,25 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6511144331317960518, guid: d98af071322cc8042b8b01ba433797ca, type: 3}
+--- !u!205 &5827864134371198004
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239957484206951292}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.1107749, y: -0.14629285, z: -0.040810958}
+  m_Size: 0.32194778
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.017330972
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1753163041097493161}
+  m_Enabled: 1
